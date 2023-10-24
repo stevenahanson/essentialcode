@@ -3,12 +3,8 @@ import UserProfile from "./components/UserProfile";
 export default function Home() {
   return (
     <>
-      <div>
-        <p>Profile</p>
-      </div>
-      <div>
-        <h1>Your profile:</h1>
-      </div>
+      <h1>Profile</h1>
+      <h2>Your profile:</h2>
       <UserProfile />
     </>
   );

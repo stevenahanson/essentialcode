@@ -1,20 +1,26 @@
 export default function UserProfile() {
   const userProfile = {
     userName: "SHanson",
-    fullName: "Steven Hanson",
+    firstName: "Steven",
+    lastName: "Hanson",
     followers: 1000000,
     following: 2,
   };
 
-  const { userName, followers, following } = userProfile;
+  const personalInfo = {
+    email: "stevenahanson@life.com",
+    profilePic: "me.png",
+  };
+
+  const fullProfile = { ...userProfile, ...personalInfo };
 
   return (
     <>
-      <p className="text-slate-600">Missing profile picture!</p>
       <div>
-        <p>Username: {userName}</p>
-        <p>Following: {following}</p>
-        <p>Followers: {followers}</p>
+        <p>{fullProfile.profilePic}</p>
+        <p>Username: {fullProfile.userName}</p>
+        <p>Following: {fullProfile.following}</p>
+        <p>Followers: {fullProfile.followers}</p>
       </div>
     </>
   );
