@@ -20,7 +20,7 @@ export default function UserProfile() {
 
   return (
     <>
-      <div>
+      <div className="flex justify-center">
         <Image
           className="rounded-full border-yellow-400	border-2"
           src={fullProfile.profilePic}
@@ -28,9 +28,6 @@ export default function UserProfile() {
           height={60}
           alt="profile pic"
         />
-        <p>Username: {fullProfile.userName}</p>
-        <p>Following: {fullProfile.following}</p>
-        <p>Followers: {fullProfile.followers}</p>
       </div>
     </>
   );
