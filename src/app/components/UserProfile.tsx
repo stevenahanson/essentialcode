@@ -1,3 +1,7 @@
+"use client";
+
+import Image from "next/image";
+
 export default function UserProfile() {
   const userProfile = {
     userName: "SHanson",
@@ -9,7 +13,7 @@ export default function UserProfile() {
 
   const personalInfo = {
     email: "stevenahanson@life.com",
-    profilePic: "me.png",
+    profilePic: "/profile.jpeg",
   };
 
   const fullProfile = { ...userProfile, ...personalInfo };
@@ -17,7 +21,12 @@ export default function UserProfile() {
   return (
     <>
       <div>
-        <p>{fullProfile.profilePic}</p>
+        <Image
+          src={fullProfile.profilePic}
+          width={60}
+          height={60}
+          alt="profile pic"
+        />
         <p>Username: {fullProfile.userName}</p>
         <p>Following: {fullProfile.following}</p>
         <p>Followers: {fullProfile.followers}</p>
