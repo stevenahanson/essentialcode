@@ -22,6 +22,7 @@ export default function UserProfile() {
     <>
       <div>
         <Image
+          className="rounded-full"
           src={fullProfile.profilePic}
           width={60}
           height={60}
