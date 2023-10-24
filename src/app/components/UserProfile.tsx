@@ -9,10 +9,13 @@ export default function UserProfile() {
   const { userName, followers, following } = userProfile;
 
   return (
-    <div>
-      <p>Username: {userName}</p>
-      <p>Following: {following}</p>
-      <p>Followers: {followers}</p>
-    </div>
+    <>
+      <p className="text-slate-600">Missing profile picture!</p>
+      <div>
+        <p>Username: {userName}</p>
+        <p>Following: {following}</p>
+        <p>Followers: {followers}</p>
+      </div>
+    </>
   );
 }
