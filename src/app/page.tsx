@@ -1,3 +1,5 @@
+import UserProfile from "./components/UserProfile";
+
 export default function Home() {
   const userProfile = {
     userName: "SHanson",
@@ -10,6 +12,7 @@ export default function Home() {
 
   return (
     <>
+      <UserProfile />
       <div>
         <p>Profile</p>
       </div>
