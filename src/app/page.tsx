@@ -1,17 +1,26 @@
 export default function Home() {
-  const mentors = ["leonardo dicaprio", "steven barlett", "master p"];
+  const userProfile = {
+    userName: "SHanson",
+    fullName: "Steven Hanson",
+    followers: 1000000,
+    following: 2,
+  };
 
-  const [third, first, second] = mentors;
-
-  console.log("current mentor is " + first);
-  console.log("future mentor is " + second);
-  console.log("super future mentor is " + third);
+  const { userName, followers, following } = userProfile;
 
   return (
-    <div>
-      <p>I am currently being mentored by: {first}</p>
-      <p>In the future, {second} will be my mentor</p>
-      <p>In the super future, {third} will be my mentor</p>
-    </div>
+    <>
+      <div>
+        <p>Profile</p>
+      </div>
+      <div>
+        <h1>Your profile:</h1>
+      </div>
+      <div>
+        <p>Username: {userName}</p>
+        <p>Following: {following}</p>
+        <p>Followers: {followers}</p>
+      </div>
+    </>
   );
 }
