@@ -1,14 +1,9 @@
-import UserProfile from "./components/UserProfile2";
+import UserProfile from "./components/UserProfile";
 
 export default function Home() {
   return (
     <>
-      <UserProfile
-        username="SHanson"
-        fullname="Steven Hanson"
-        following={2}
-        followers={1000000}
-      />
+      <UserProfile />
     </>
   );
 }
